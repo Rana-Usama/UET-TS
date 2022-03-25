@@ -4,10 +4,10 @@ import { RFPercentage } from 'react-native-responsive-fontsize';
 
 //components
 import Screen from './../components/Screen';
+import MyAppButton from './../components/common/MyAppButton';
 
 //config
 import Colors from '../config/Colors';
-import MyAppButton from './../components/common/MyAppButton';
 
 function WelcomeScreen(props) {
 
