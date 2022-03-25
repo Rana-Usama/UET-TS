@@ -35,7 +35,7 @@ function WelcomeScreen(props) {
                 <MyAppButton
                     title="Student"
                     padding={RFPercentage(1.6)}
-                    // onPress={() => handleLogin()}
+                    onPress={() => props.navigation.navigate("StudentIDScreen")}
                     backgroundColor={Colors.blue}
                     color={Colors.white}
                     bold={false}
@@ -46,7 +46,7 @@ function WelcomeScreen(props) {
                 <MyAppButton
                     title="Driver"
                     padding={RFPercentage(1.6)}
-                    // onPress={() => handleLogin()}
+                    onPress={() => props.navigation.navigate("DriverIDScreen")}
                     backgroundColor={Colors.blue}
                     color={Colors.white}
                     bold={false}

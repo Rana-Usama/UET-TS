@@ -3,6 +3,7 @@ export default {
     white: "#fff",
     black: "black",
     primary: "#7C8E94",
+    red: '#CB1818',
     darkGrey2: '#2D2D2D',
     newInputFieldBorder: '#DEDEDE',
     grey: "#d5d5d5",
