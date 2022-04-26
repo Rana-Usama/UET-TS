@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native'
 import { RFPercentage } from 'react-native-responsive-fontsize';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
 
 //components
 import Screen from './../components/Screen';
@@ -22,10 +23,22 @@ function DriverIDScreen(props) {
                 <Text style={{ fontSize: RFPercentage(2.6), color: Colors.white }} >
                     Driver ID
                 </Text>
+                <TouchableOpacity activeOpacity={0.8} style={{ position: 'absolute', right: RFPercentage(2) }} >
+                    <Entypo name="dots-three-vertical" style={{ color: Colors.white, fontSize: RFPercentage(2.8) }} color={Colors.white} />
+                </TouchableOpacity>
             </TouchableOpacity>
 
+            {/* End Button */}
+            <View style={{ marginTop: RFPercentage(5), width: '90%', justifyContent: 'center', alignItems: 'center' }} >
+                <TouchableOpacity activeOpacity={0.8} style={{ position: 'absolute', right: 0, justifyContent: 'center', alignItems: 'center', width: RFPercentage(10), height: RFPercentage(6), backgroundColor: Colors.grey, borderRadius: RFPercentage(1.6) }} >
+                    <Text style={{ color: Colors.black, fontSize: RFPercentage(2.2) }} >
+                        END
+                    </Text>
+                </TouchableOpacity>
+            </View>
+
             {/* MAP INTEGRATION */}
-            <Text style={{ marginTop: RFPercentage(40), fontSize: RFPercentage(2.5) }} >
+            <Text style={{ marginTop: RFPercentage(35), fontSize: RFPercentage(2.5) }} >
                 Map Integration
             </Text>
 
